@@ -1,0 +1,28 @@
+.course-row {
+  margin: 3em 0;
+}
+.course-row-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.course-row-info h3 {
+  font-weight: 700;
+}
+.course-row-info .btn {
+  height: 30px;
+  width: 100px;
+}
+.slick-prev {
+  left: -35px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 30px !important;
+  line-height: 1;
+  opacity: 1 !important;
+  color: var(--main-bg-color) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

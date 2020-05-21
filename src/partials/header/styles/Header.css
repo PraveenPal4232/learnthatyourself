@@ -1,4 +1,26 @@
-nav a {
-  padding: 0 10px;
-  color: #000000;
+header {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: var(--main-bg-color);
+}
+nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    justify-content: flex-end;
+    align-self: center;
+  }
+  nav a {
+    color: #ffffff !important;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: var(--lightgreen-bg-color) !important;
+  }
 }

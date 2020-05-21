@@ -1,0 +1,32 @@
+.course-thumbnail {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
+  cursor: pointer;
+  height: 100%;
+}
+.course-details {
+  padding: 1em;
+  padding-bottom: 2em;
+}
+.course-info,
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+}
+.course-meta {
+  position: absolute;
+  bottom: 0.5em;
+  width: calc(100% - 2em);
+}
+.course-info p,
+.course-meta p {
+  margin-bottom: 0px;
+  font-size: 13px !important;
+}
+.course-name {
+  font-weight: 700;
+  margin-top: 5px;
+}

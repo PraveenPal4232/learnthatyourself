@@ -1,0 +1,49 @@
+footer {
+  padding: 3em 0;
+  background-color: var(--main-bg-color);
+}
+.footer-list,
+.copy ul,
+.footer-social ul {
+  padding-left: 0px;
+}
+.footer-list li,
+.copy li,
+.footer-social li {
+  list-style: none;
+}
+.footer-list li a,
+.copy li a {
+  color: #ffffff;
+}
+.footer-list li a:hover {
+  color: var(--lightgreen-bg-color);
+}
+.footer-copy {
+  border-top: 1px solid var(--lightgreen-bg-color);
+  padding: 1em 0;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.copy li,
+.footer-social li {
+  display: inline;
+  padding-right: 1em;
+}
+.footer-social li:nth-last-child(1) {
+  padding-right: 0px;
+}
+footer .svg-icon {
+  width: 1em;
+  height: 1em;
+}
+footer .svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+footer .svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
