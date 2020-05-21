@@ -39,7 +39,6 @@ class HomePage extends Component {
                       CourseTime={course.Time}
                       CourseAuthore={course.Authore}
                       CourseBanner={course.Banner}
-                      passdata={course.Title}
                     />
                   </div>
                 ))}
