@@ -1,0 +1,10 @@
+const constants = {
+  ADD_USER: "ADD_USER",
+  REMOVE_USER: "REMOVE_USER",
+  ADD_COURSE: "ADD_COURSE",
+  REMOVE_COURSE: "REMOVE_COURSE",
+  ADD_ERROR: "ADD_ERROR",
+  CLEAR_ERROR: "CLEAR_ERROR",
+};
+
+export default constants;

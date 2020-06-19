@@ -30,8 +30,8 @@ class HomePage extends Component {
             </div>
             <div className="course-row-inner">
               <div className="row">
-                {SampleData.allCourses.map((course, i) => (
-                  <div className="col-md-3">
+                {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                  <div className="col-md-3" key={i}>
                     <CourseThumbnail
                       key={i}
                       CourseTitle={course.Title}
@@ -47,7 +47,7 @@ class HomePage extends Component {
           </div>
           {/* Recommended For You */}
           {/* Trending Classes */}
-          {/* <div className="course-row">
+          <div className="course-row">
             <div className="course-row-info">
               <h3>Trending Classes</h3>
               <button className="btn btn-sm btn-green">See More</button>
@@ -56,58 +56,58 @@ class HomePage extends Component {
               <Slider {...settings}>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </Slider>
             </div>
-          </div> */}
+          </div>
           {/* Trending Classes */}
           {/* Featured On Skillshare */}
-          {/* <div className="course-row">
+          <div className="course-row">
             <div className="course-row-info">
               <h3>Featured On Skillshare</h3>
               <button className="btn btn-sm btn-green">See More</button>
@@ -116,55 +116,55 @@ class HomePage extends Component {
               <Slider {...settings}>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(4, 8).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>
                   <div className="row">
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
-                    <div className="col-md-3">
-                      <CourseThumbnail />
-                    </div>
+                    {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                      <div className="col-md-3" key={i}>
+                        <CourseThumbnail
+                          key={i}
+                          CourseTitle={course.Title}
+                          CourseStudents={course.Students}
+                          CourseTime={course.Time}
+                          CourseAuthore={course.Authore}
+                          CourseBanner={course.Banner}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
               </Slider>
             </div>
-          </div> */}
+          </div>
           {/* Featured On Skillshare */}
         </div>
       </main>

@@ -7,7 +7,7 @@ class HomeBanner extends Component {
   render() {
     return (
       <div
-        class="home-banner"
+        className="home-banner"
         style={{ backgroundImage: `url(${BannerImage})` }}
       >
         <div className="container">

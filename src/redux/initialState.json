@@ -85,14 +85,13 @@
       "Banner": "https://static.skillshare.com/uploads/video/thumbnails/bf695e2f1c4f63f3acbfac0490ac4111/448-252"
     }
   ],
-  "users": [
+  "allUsers": [
     {
       "id": 1,
       "name": "Praveen Pal",
       "emailId": "praveenpal@gmail.com",
       "password": "1234",
       "bio": "I am a web Developer :)"
-      
     },
     {
       "id": 2,
