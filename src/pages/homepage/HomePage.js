@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SampleData from "../../redux/initialState.json";
+import { connect } from "react-redux";
 
 class HomePage extends Component {
   state = {};
@@ -30,7 +31,7 @@ class HomePage extends Component {
             </div>
             <div className="course-row-inner">
               <div className="row">
-                {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                {this.props.allCourses.slice(0, 4).map((course, i) => (
                   <div className="col-md-3" key={i}>
                     <CourseThumbnail
                       key={i}
@@ -56,7 +57,7 @@ class HomePage extends Component {
               <Slider {...settings}>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                    {this.props.allCourses.slice(8, 12).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -72,7 +73,7 @@ class HomePage extends Component {
                 </div>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                    {this.props.allCourses.slice(0, 4).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -88,7 +89,7 @@ class HomePage extends Component {
                 </div>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                    {this.props.allCourses.slice(8, 12).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -116,7 +117,7 @@ class HomePage extends Component {
               <Slider {...settings}>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(4, 8).map((course, i) => (
+                    {this.props.allCourses.slice(4, 8).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -132,7 +133,7 @@ class HomePage extends Component {
                 </div>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(8, 12).map((course, i) => (
+                    {this.props.allCourses.slice(8, 12).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -148,7 +149,7 @@ class HomePage extends Component {
                 </div>
                 <div>
                   <div className="row">
-                    {SampleData.allCourses.slice(0, 4).map((course, i) => (
+                    {this.props.allCourses.slice(0, 4).map((course, i) => (
                       <div className="col-md-3" key={i}>
                         <CourseThumbnail
                           key={i}
@@ -172,4 +173,10 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+const mapStateToProps = (state) => {
+  return {
+    allCourses: state.allCourses,
+  };
+};
+
+export default connect(mapStateToProps, null)(HomePage);
