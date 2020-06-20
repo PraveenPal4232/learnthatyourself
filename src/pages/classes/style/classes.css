@@ -52,7 +52,7 @@
 }
 .nav-tabs {
   border: none !important;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 .nav-tabs .nav-link {
   font-family: "Jost", sans-serif;
@@ -65,5 +65,35 @@
 .nav-tabs .nav-link.active {
   color: var(--lightgreen-bg-color) !important;
   background-color: transparent !important;
-  border-bottom: 2px solid #212529 !important;
+  border-bottom: 2px solid #394649 !important;
+}
+.course_status {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #394649;
+  padding-bottom: 1.5em;
+}
+.course_author {
+  border-bottom: 1px solid #394649;
+  padding-bottom: 0.5em;
+}
+.author_avatar {
+  display: flex;
+}
+.avatar_img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.skill_tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill_tags a {
+  color: var(--main-bg-color) !important;
+  border: 1px solid var(--main-bg-color) !important;
+  padding: 2px 5px;
+  margin: 5px 10px 5px 0;
+  border-radius: 2px;
 }

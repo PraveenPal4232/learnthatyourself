@@ -237,16 +237,150 @@ class Classes extends Component {
           <div className="container">
             <Tabs defaultActiveKey="about" id="uncontrolled-tab-example">
               <Tab eventKey="about" title="About">
-                <h1>About</h1>
+                <div className="row">
+                  <div className="col-8">
+                    <div className="#">
+                      <h3>About This Class</h3>
+                      <p>
+                        <strong>
+                          Dream of finally finishing that draft or launching
+                          that side-hustle? Make your next creative project your
+                          best yet, with simple steps from creative superstar
+                          Emma Gannon!
+                        </strong>
+                      </p>
+                      <p>
+                        In this new class, Emma shares the framework that
+                        allowed her to overcome self-doubt and carve her own
+                        path as an author, broadcaster, and podcast host. The
+                        secret to her success? Fed up with feeling afraid—of
+                        failure, of not being good enough, even of success—Emma
+                        dug into the science behind self-sabotage and learned
+                        exactly how to get out of her own way.
+                      </p>
+                      <p>
+                        <strong>
+                          Now, Emma is sharing what she’s learned so that you
+                          can do the same: unlock your creative potential while
+                          feeling energized and empowered!
+                        </strong>
+                      </p>
+                      <p>Together with Emma, you will:</p>
+                      <ul>
+                        <li>
+                          <strong>Identify the patterns</strong> in your life,
+                          and let go of habits that don’t serve you
+                        </li>
+                        <li>
+                          <strong>Cut out comparison</strong> to figure out what
+                          you really want and need
+                        </li>
+                        <li>
+                          <strong>Silence your inner critic</strong> by talking
+                          back to negative beliefs and behaviors
+                        </li>
+                        <li>
+                          <strong>Own your success</strong> and
+                          vulnerability—both go hand-in-hand with creativity
+                        </li>
+                      </ul>
+                      <p>
+                        Packed with insights and examples from Emma’s personal
+                        journey, this class is designed for every creative who
+                        needs a pep-talk or extra push to get started—and
+                        includes five exclusive downloadable worksheets to
+                        support you along the way.
+                      </p>
+                      <p>
+                        Whether you’re looking to break through block, remove
+                        self-imposed pressure, or simply approach each new
+                        project with intention, this 45-minute class will unlock
+                        your confidence as a creative. Get started and celebrate
+                        taking the first step!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="#">
+                      <div className="course_status">
+                        <div className="course_levels text-center">
+                          <svg
+                            className="svg-icon"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M5 19h-4v-4h4v4zm6 0h-4v-8h4v8zm6 0h-4v-13h4v13zm6 0h-4v-19h4v19zm1 2h-24v2h24v-2z" />
+                          </svg>
+
+                          <div className="mt-2">All levels</div>
+                        </div>
+                        <div className="course_students text-center">
+                          <h4>57,582</h4> Students
+                        </div>
+                        <div className="course_projects text-center">
+                          <h4>2,578</h4> Projects
+                        </div>
+                      </div>
+                      <div className="course_author mt-4">
+                        <div className="author_avatar">
+                          <div class="avatar_img mr-3">
+                            <img
+                              src="https://pbs.twimg.com/profile_images/1265131512485285889/O_Cp7b7F_200x200.jpg"
+                              className="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div className="sort_bio">
+                            <span>Adriene Mishler </span>
+                            <span className="ml-2">Follow</span>
+                            <p>Actress, Yogi, Writer, Entrepreneur</p>
+                          </div>
+                        </div>
+                        <div className="author_bio">
+                          <p>
+                            Adriene Mishler is an actress, writer, international
+                            yoga teacher and entrepreneur from Austin, Texas. On
+                            a mission to get the tools of yoga into schools and
+                            homes, Adriene hosts the popular YouTube channel
+                            Yoga with Adriene, an online community of over 7
+                            million viewers. Yoga with Adriene provides high
+                            quality practices on yoga and mindfulness at no cost
+                            to inspire people of all ages, shapes and sizes.
+                          </p>
+                          <p>
+                            <strong>See full profile</strong>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="course_skills mt-4">
+                        <p>
+                          <strong>Skills in this Class:</strong>
+                        </p>
+                        <div className="skill_tags">
+                          <a href="#">Health &amp; Wellness</a>
+                          <a href="#">Lifestyle</a>
+                          <a href="#">Yoga</a>
+                          <a href="#">Wellness</a>
+                          <a href="#">Fitness</a>
+                          <a href="#">PracticeYoga</a>
+                          <a href="#">YogaWithAdriene</a>
+                          <a href="#">Yogaforall </a>
+                          <a href="#">Yoga Love</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </Tab>
               <Tab eventKey="reviews" title="Reviews 839">
-                <h1>Reviews 839</h1>
+                <h3>Reviews 839</h3>
               </Tab>
               <Tab eventKey="discussions" title="Discussions 127">
-                <h1>Discussions 127</h1>
+                <h3>Discussions 127</h3>
               </Tab>
               <Tab eventKey="projects_resources" title="Projects & Resourcest">
-                <h1>Projects & Resources</h1>
+                <h3>Project Description</h3>
               </Tab>
             </Tabs>
           </div>
