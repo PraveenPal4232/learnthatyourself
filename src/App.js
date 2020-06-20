@@ -6,6 +6,7 @@ import Header from "./partials/header/Header";
 import Footer from "./partials/footer/Footer";
 import HomePage from "./pages/homepage/HomePage";
 import Course from "./pages/coursepage/CoursePage";
+import Classes from "./pages/classes/Classes";
 import PageNotFound from "./pages/pagenotfound/PageNotFound";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/course" component={Course} />
+        <Route exact path="/classes/:id" component={Classes} />
         <Route component={PageNotFound} />
       </Switch>
       <Footer />

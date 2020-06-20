@@ -7,7 +7,7 @@ import SignUp from "../signUp/signUp";
 
 class Header extends Component {
   state = {
-    showSignIn: true,
+    showSignIn: false,
     showSignUp: false,
   };
 
@@ -31,7 +31,7 @@ class Header extends Component {
           <nav>
             <Link to="/">Home</Link>
             <Link to="#">Browse</Link>
-            <Link to="/course">Course</Link>
+            <Link to={"/classes/" + 8}>Classes</Link>
             <Link to="#">Workshops</Link>
             <Link onClick={this.toggleSignIn}>Sign In</Link>
             <button class="btn btn-sm btn-green" onClick={this.toggleSignUp}>
