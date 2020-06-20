@@ -7,7 +7,7 @@ import SignUp from "../signUp/signUp";
 
 class Header extends Component {
   state = {
-    showSignIn: false,
+    showSignIn: true,
     showSignUp: false,
   };
 
