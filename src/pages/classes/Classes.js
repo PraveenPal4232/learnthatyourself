@@ -8,6 +8,7 @@ import {
   useParams,
 } from "react-router-dom";
 import { Tab, Tabs } from "react-bootstrap";
+import Icon from "../../assets/icon/best_suited_for.png";
 
 class Classes extends Component {
   state = {};
@@ -374,7 +375,131 @@ class Classes extends Component {
                 </div>
               </Tab>
               <Tab eventKey="reviews" title="Reviews 839">
-                <h3>Reviews 839</h3>
+                <div className="ef">
+                  <h3>How students rated this class</h3>
+                  <div className="row mt-4">
+                    <div className="col-md-4">
+                      <div className="inner_gray">
+                        <h4>Best Suited for</h4>
+                        <img src={Icon} alt="" className="mt-2" />
+                        <br />
+                        <span className="span_white mt-3 mb-2">
+                          Intermediate
+                        </span>
+                        <br />
+                        <span>(Based on 385 reviews)</span>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="inner_gray">
+                        <h4>Most Liked</h4>
+                        <span className="span_white mt-3">
+                          339 Engaging Teacher
+                        </span>
+                        <br />
+                        <span className="span_white mt-3">
+                          322 Helpful Examples
+                        </span>
+                        <br />
+                        <span className="span_white mt-3">
+                          299 Clarity of Instruction
+                        </span>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="inner_gray">
+                        <h4>Expectations Met?</h4>
+                        <ul className="mt-3">
+                          <li className="enabled-expectation">
+                            <div className="review-tag">Exceeded!</div>
+                            <div class="graph-item">
+                              <span style={{ width: "70%" }}></span>
+                            </div>
+                            <div className="percentage">70%</div>
+                          </li>
+                          <li className="enabled-expectation">
+                            <div className="review-tag">Yes!</div>
+                            <div class="graph-item">
+                              <span style={{ width: "28%" }}></span>
+                            </div>
+                            <div className="percentage">28%</div>
+                          </li>
+                          <li className="enabled-expectation">
+                            <div className="review-tag">Somewhat!</div>
+                            <div class="graph-item">
+                              <span style={{ width: "2%" }}></span>
+                            </div>
+                            <div className="percentage">2%</div>
+                          </li>
+                          <li className="enabled-expectation">
+                            <div className="review-tag">Not really</div>
+                            <div class="graph-item">
+                              <span style={{ width: "0%" }}></span>
+                            </div>
+                            <div className="percentage">0%</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <Tabs
+                    defaultActiveKey="a1"
+                    id="uncontrolled-tab-example"
+                    className="mt-4 mb-4"
+                  >
+                    <Tab eventKey="a1" title="Highest Rated">
+                      <div class="a">
+                        <ul>
+                          <li className="new_reviews populated">
+                            <div className="user_snippet">
+                              <div className="user_avarat mr-3">
+                                <img src={Icon} alt="" />
+                              </div>
+                              <h5 >Peter Kuznicki</h5>
+                            </div>
+                            <div className="review_content">
+                              <div className="review_feedback">
+                                <div class="review_expectations">
+                                  This class <strong>exceeded</strong> my
+                                  expectations!
+                                </div>
+                                <div class="review_level">
+                                  <svg
+                                    class="svg-icon"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path d="M5 19h-4v-4h4v4zm6 0h-4v-8h4v8zm6 0h-4v-13h4v13zm6 0h-4v-19h4v19zm1 2h-24v2h24v-2z"></path>
+                                  </svg>
+                                  <span className="ml-2">
+                                    I recommend it for
+                                    <strong> Advanced Levels.</strong>
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="review_body">
+                                Jessica is such a fantastic communicator,
+                                articulating each variable with precision and
+                                clarity! Great class, added an extra dimension
+                                to the minutae of type
+                              </div>
+                            </div>
+                            <div className="review-timestamp">
+                              Posted 1 week ago
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </Tab>
+                    <Tab eventKey="a3" title="Lowest Rated">
+                      <h1>A3</h1>
+                    </Tab>
+                    <Tab eventKey="a21" title="Most Recent">
+                      <h1>A2</h1>
+                    </Tab>
+                  </Tabs>
+                </div>
               </Tab>
               <Tab eventKey="discussions" title="Discussions 127">
                 <h3>Discussions 127</h3>
